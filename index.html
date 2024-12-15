@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Study Hub</h1>
+        <p>Your one-stop destination for notes and experiments</p>
+    </header>
+    <nav>
+        <a href="#notes">Notes</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#ai">AI Assistant</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="notes" class="section">
+            <h2>Notes</h2>
+            <ul>
+                <li><a href="#">Mathematics Notes (PDF)</a></li>
+                <li><a href="#">Physics Notes (PDF)</a></li>
+                <li><a href="#">Chemistry Notes (PDF)</a></li>
+            </ul>
+        </section>
+        <section id="experiments" class="section">
+            <h2>Experiments</h2>
+            <ul>
+                <li><a href="#">Experiment 1: Measuring Acceleration Due to Gravity</a></li>
+                <li><a href="#">Experiment 2: Chemical Reaction Rate Study</a></li>
+                <li><a href="#">Experiment 3: Circuit Analysis</a></li>
+            </ul>
+        </section>
+        <section id="ai" class="section">
+            <h2>AI Assistant</h2>
+            <p>Ask your questions or get help with your studies:</p>
+            <iframe src="https://chat.openai.com" title="ChatGPT"></iframe>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Have questions or suggestions? Reach out to me!</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Study Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
